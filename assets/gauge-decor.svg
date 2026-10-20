@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="769" height="300" viewBox="0 0 769 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Gauge Decor" clip-path="url(#clip0_0_140)">
+<path id="Vector" d="M538.8 342C528.562 324.3 522.325 304.572 520.528 284.203C518.731 263.834 521.418 243.319 528.4 224.1" stroke-width="22" stroke-linecap="round" stroke="#F2564D"/>
+<path id="Vector_2" d="M543.9 193.7C564.21 163.63 595.402 142.621 630.9 135.1" stroke-width="22" stroke-linecap="round" stroke="#E4F44C"/>
+<path id="Vector_3" d="M664.9 132.1C688.621 132.937 711.74 139.791 732.084 152.019C752.429 164.246 769.33 181.445 781.2 202" stroke-width="22" stroke-linecap="round" stroke="#0E0E0E"/>
+<path id="Vector_4" d="M599 269C613 245 623 289 639 263C651 243 659 275 677 251C687 237 697 225 713 213" stroke-width="2.6" stroke-linecap="round" stroke="#0E0E0E"/>
+<path id="Vector_5" d="M697 211L714 212L711 229" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke="#0E0E0E"/>
+</g>
+<defs>
+<clipPath id="clip0_0_140">
+<rect width="769" height="300" fill="white"/>
+</clipPath>
+</defs>
+</svg>

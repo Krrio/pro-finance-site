@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Finance — Invest for the Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="viewport" id="viewport">
+<div class="stage" id="stage">
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" data-node="4:66">
+    <a href="#" class="logo" aria-label="Pro Finance">
+      <img class="logo__accent" src="assets/logo-accent.svg" width="41" height="41" alt="">
+      <span class="logo__text">Pro Finance</span>
+    </a>
+    <nav class="nav">
+      <a href="#features">About Us</a>
+      <a href="#stonks">Catalog</a>
+      <a href="#advantages">Price</a>
+      <a href="#footer">Help</a>
+    </nav>
+    <div class="actions">
+      <a href="#" class="btn btn--ghost">Log In</a>
+      <a href="#final" class="btn btn--nav">
+        <img src="assets/icon-download-sm.svg" width="14" height="14" alt="">
+        <span>Download App</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero" data-node="4:83">
+    <div class="hero__copy">
+      <h1 class="display">
+        <span class="line"><span>Invest for</span></span>
+        <span class="line"><span>the Future</span></span>
+      </h1>
+      <p class="body-l hero__lead">Work with all the necessary information and tools to boost money flow from your capital investment using ProFinance!</p>
+      <a href="#final" class="btn btn--primary hero__btn">
+        <img src="assets/icon-download.svg" width="18" height="18" alt="">
+        <span>Download App</span>
+      </a>
+    </div>
+
+    <img class="hero__sparkle" src="assets/sparkle.svg" width="52" height="52" alt="">
+    <img class="hero__arrow" src="assets/curved-arrow.svg" width="340" height="380" alt="">
+
+    <a href="#features" class="hero__more">
+      <span>Find Out More</span>
+      <img src="assets/arrow-down.svg" width="14" height="14" alt="">
+    </a>
+
+    <!-- Phone / Stock Detail (rotated 10°) -->
+    <div class="rot phone-wrap phone-wrap--detail" style="left:909.97px;top:96px;width:440.165px;height:764.629px">
+      <div class="par"><div class="float">
+        <div class="phone phone--detail" style="--r:10deg">
+          <div class="pd__dark"></div>
+          <img class="a" src="assets/back.svg" width="18" height="18" alt="" style="left:22px;top:34px">
+          <p class="a w6 c-white" style="left:128px;top:30px;font-size:13px">Apple Inc</p>
+          <p class="a w4 c-muted" style="left:148px;top:48px;font-size:9px">AAPL</p>
+          <button class="a icon-btn star-btn" style="left:280px;top:34px" aria-label="Favourite"><img src="assets/star.svg" width="18" height="18" alt=""></button>
+          <p class="a w7 c-white" id="livePrice" style="left:22px;top:74px;font-size:24px">$132.15</p>
+          <p class="a w5 c-lime" id="liveChange" style="left:118px;top:86px;font-size:10px">+1.25% · $1.73</p>
+          <img class="a bell" src="assets/bell.svg" width="16" height="16" alt="" style="left:282px;top:84px">
+          <div class="candles" id="candles">
+            <div class="grid" style="top:20px"></div>
+            <div class="grid" style="top:80px"></div>
+            <div class="grid" style="top:140px"></div>
+            <div class="grid" style="top:200px"></div>
+          </div>
+          <p class="a w4 c-muted" style="left:262px;top:130px;font-size:8px">132.38</p>
+          <div class="timeframes" id="timeframes">
+            <button class="tf">1H</button>
+            <button class="tf">4H</button>
+            <button class="tf is-active">Day</button>
+            <button class="tf">Week</button>
+            <button class="tf">Month</button>
+          </div>
+          <p class="a w6 c-muted cap" style="left:22px;top:452px;font-size:8px;letter-spacing:.48px">OVERVIEW</p>
+          <p class="a w6 c-muted cap" style="left:122px;top:452px;font-size:8px;letter-spacing:.48px">INDICATORS</p>
+          <p class="a w6 c-muted cap" style="left:222px;top:452px;font-size:8px;letter-spacing:.48px">NEWS</p>
+
+          <p class="a w4 c-muted" style="left:22px;top:494px;font-size:11px">Market Cap</p>
+          <p class="a w6 c-ink" style="left:246px;top:490px;font-size:13px">$1,850.10</p>
+          <p class="a w5 c-green" style="left:272px;top:508px;font-size:9px">+48.1%</p>
+          <div class="a hr" style="left:22px;top:526px;width:276px"></div>
+          <p class="a w4 c-muted" style="left:22px;top:538px;font-size:11px">Open</p>
+          <p class="a w6 c-ink" style="left:258px;top:534px;font-size:13px">$133.10</p>
+          <p class="a w5 c-red" style="left:276px;top:552px;font-size:9px">-0.7%</p>
+          <div class="a hr" style="left:22px;top:570px;width:276px"></div>
+          <p class="a w4 c-muted" style="left:22px;top:582px;font-size:11px">Day High</p>
+          <p class="a w6 c-ink" style="left:251px;top:578px;font-size:13px">$254.37</p>
+          <p class="a w5 c-green" style="left:275px;top:596px;font-size:9px">+4.2%</p>
+          <div class="a hr" style="left:22px;top:614px;width:276px"></div>
+          <button class="a trade-btn trade-btn--sell" style="left:20px;top:640px">Sell</button>
+          <button class="a trade-btn trade-btn--buy" style="left:166px;top:640px">Buy</button>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Phone / Market (rotated -5°) -->
+    <div class="rot phone-wrap phone-wrap--market" style="left:704px;top:32.37px;width:401.458px;height:746.893px">
+      <div class="par"><div class="float">
+        <div class="phone phone--market" style="--r:-5deg">
+          <p class="a w6 c-ink" style="left:24px;top:48px;font-size:30px">Market</p>
+          <label class="pm__search">
+            <img src="assets/search.svg" width="12" height="12" alt="">
+            <input type="text" placeholder="Find stocks, funds, bonds...">
+          </label>
+          <button class="a pm__filter" aria-label="Filter"><img src="assets/filter.svg" width="14" height="14" alt=""></button>
+          <div class="pm__chips">
+            <button class="chip">Stocks</button>
+            <button class="chip">Funds</button>
+            <button class="chip">Bonds</button>
+            <button class="chip">Currencies</button>
+            <button class="chip">Futures</button>
+          </div>
+          <p class="a w6 c-muted" style="left:24px;top:204px;font-size:8px;letter-spacing:.64px">COLLECTIONS</p>
+          <div class="pm__collection">
+            <p class="a w6 c-white" style="left:18px;top:18px;font-size:14px">Dividend Strategy</p>
+            <p class="a w4 c-muted" style="left:18px;top:38px;font-size:8px">Balanced diversified portfolio with low risks</p>
+            <p class="a w7 c-lime" style="left:18px;top:62px;font-size:20px">+6.48%</p>
+            <p class="a w4 c-muted" style="left:18px;top:88px;font-size:8px">per year</p>
+            <img class="a asset" src="assets/asset-1.svg" width="30" height="30" alt="" style="left:150px;top:66px">
+            <img class="a asset" src="assets/asset-2.svg" width="30" height="30" alt="" style="left:172px;top:66px">
+            <img class="a asset" src="assets/asset-3.svg" width="30" height="30" alt="" style="left:194px;top:66px">
+            <img class="a asset" src="assets/asset-4.svg" width="30" height="30" alt="" style="left:216px;top:66px">
+            <img class="a asset" src="assets/asset-5.svg" width="30" height="30" alt="" style="left:238px;top:66px">
+            <p class="a w7 c-white" style="left:244px;top:76px;font-size:9px">+22</p>
+          </div>
+          <p class="a w6 c-muted" style="left:24px;top:352px;font-size:8px;letter-spacing:.64px">FAVORITES</p>
+          <img class="a" src="assets/plus.svg" width="14" height="14" alt="" style="left:302px;top:348px">
+          <div class="pm__fav" style="left:24px">
+            <img class="a" src="assets/fav-icon.svg" width="34" height="34" alt="" style="left:13px;top:13px">
+            <p class="a w7 c-ink" style="left:25px;top:20px;font-size:14px">A</p>
+            <p class="a w6 c-ink" style="left:13px;top:85px;font-size:12px">Apple Inc</p>
+            <p class="a w4 c-sec" style="left:13px;top:103px;font-size:10px">$132.15</p>
+            <p class="a w5 c-green" style="left:63px;top:104px;font-size:9px">+1.25%</p>
+          </div>
+          <div class="pm__fav" style="left:176px">
+            <img class="a" src="assets/fav-icon.svg" width="34" height="34" alt="" style="left:13px;top:13px">
+            <p class="a w7 c-ink" style="left:25px;top:20px;font-size:14px">S</p>
+            <p class="a w6 c-ink" style="left:13px;top:85px;font-size:12px">Spotify</p>
+            <p class="a w4 c-sec" style="left:13px;top:103px;font-size:10px">$292.92</p>
+            <p class="a w5 c-green" style="left:63px;top:104px;font-size:9px">+2.06%</p>
+          </div>
+          <p class="a w6 c-muted" style="left:24px;top:528px;font-size:8px;letter-spacing:.64px">USER CHOICE</p>
+          <div class="pm__choice">
+            <img class="a" src="assets/user-icon.svg" width="32" height="32" alt="" style="left:12px;top:12px">
+            <p class="a w7 c-ink" style="left:22px;top:20px;font-size:13px">M</p>
+            <p class="a w6 c-ink" style="left:54px;top:14px;font-size:12px">Microsoft corp.</p>
+            <p class="a w4 c-muted" style="left:54px;top:31px;font-size:9px">MSFT</p>
+            <p class="a w6 c-ink" style="left:231px;top:20px;font-size:12px">$1,402.71</p>
+          </div>
+          <div class="a pm__tabbar"></div>
+          <div class="a hr" style="left:0;top:640px;width:340px"></div>
+          <img class="a tab-icon" src="assets/tab-1.svg" width="22" height="22" alt="" style="left:60px;top:664px">
+          <img class="a tab-icon" src="assets/tab-2.svg" width="22" height="22" alt="" style="left:159px;top:664px">
+          <img class="a tab-icon" src="assets/tab-3.svg" width="22" height="22" alt="" style="left:258px;top:664px">
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features" data-node="6:93">
+    <h2 class="h2 split" style="position:absolute;left:0;top:0">
+      <span class="line"><span>Get the Most Out</span></span>
+      <span class="line"><span>of Your Investments</span></span>
+    </h2>
+    <article class="fcard" style="left:0;width:538px">
+      <div class="fcard__content" style="width:330px">
+        <h3 class="h3">Unlimited Portfolio Accounts</h3>
+        <p class="body-l c-sec">Manage all your financial assets from one place</p>
+      </div>
+      <a href="#" class="read-more"><span>Read More</span><img src="assets/arrow-right.svg" width="16" height="16" alt=""></a>
+      <img class="fcard__decor decor-portfolio" src="assets/decor.svg" width="538" height="300" alt="">
+    </article>
+    <article class="fcard" style="left:571px;width:769px">
+      <div class="fcard__content" style="width:380px">
+        <h3 class="h3">Full Analytics in Your App</h3>
+        <p class="body-l c-sec">Analyze the results and try different strategies for more income</p>
+      </div>
+      <a href="#" class="read-more"><span>Read More</span><img src="assets/arrow-right.svg" width="16" height="16" alt=""></a>
+      <img class="fcard__decor decor-gauge" src="assets/gauge-decor.svg" width="769" height="300" alt="">
+    </article>
+  </section>
+
+  <!-- ============ ADVANTAGES ============ -->
+  <section class="advantages" id="advantages" data-node="6:121">
+    <div class="adv__intro">
+      <h2 class="h2 split"><span class="line"><span>Advantages</span></span></h2>
+      <p class="body-l" data-reveal>We listen to our customers and work with them to improve the user experience of our platform</p>
+    </div>
+
+    <div class="adv" style="left:453px;top:12px">
+      <div class="adv__icon"><img src="assets/glyph-start.svg" width="44" height="50" alt="" style="position:absolute;left:0;top:-6px"></div>
+      <div class="adv__text">
+        <h4 class="h4">Smooth Start</h4>
+        <p class="body-l c-sec">Without a visit to the office, we will set up your brokerage account in 5 minutes</p>
+        <a href="#" class="btn btn--outline">Open an Account</a>
+      </div>
+    </div>
+    <div class="adv" style="left:909px;top:12px">
+      <div class="adv__icon"><img src="assets/glyph-support.svg" width="22" height="22" alt=""></div>
+      <div class="adv__text">
+        <h4 class="h4">24/7 Support</h4>
+        <p class="body-l c-sec">Our support team is always available to answer questions and resolve any issues</p>
+        <a href="#" class="btn btn--outline">Ask a Question</a>
+      </div>
+    </div>
+    <div class="adv" style="left:453px;top:301px">
+      <div class="adv__icon"><img src="assets/glyph-commission.svg" width="28" height="28" alt=""></div>
+      <div class="adv__text">
+        <h4 class="h4">Low Commissions</h4>
+        <p class="body-l c-sec">We give you the best rate we can for any kind of transactions. No extra fees</p>
+        <a href="#" class="btn btn--outline">Explore Prices</a>
+      </div>
+    </div>
+    <div class="adv" style="left:909px;top:301px">
+      <div class="adv__icon"><img src="assets/glyph-amount.svg" width="22" height="22" alt=""></div>
+      <div class="adv__text">
+        <h4 class="h4">Invest Any Amount</h4>
+        <p class="body-l c-sec">You don’t have to have large sums to start investing, start small</p>
+        <a href="#" class="btn btn--outline">Start Now</a>
+      </div>
+    </div>
+    <div class="divider divider--v"></div>
+    <div class="divider divider--h"></div>
+  </section>
+
+  <!-- ============ PARTNERS ============ -->
+  <section class="partners" data-node="6:168">
+    <div class="partners__heading">
+      <h2 class="h2 split"><span class="line"><span>Our Partners</span></span></h2>
+      <p class="body-l" data-reveal>The largest banks, funds and exchanges from<br>all over the world cooperate with us</p>
+    </div>
+    <div class="partners__logos">
+      <div class="partner">LOGO</div><div class="partner">LOGO</div><div class="partner">LOGO</div><div class="partner">LOGO</div>
+      <div class="partner">LOGO</div><div class="partner">LOGO</div><div class="partner">LOGO</div><div class="partner">LOGO</div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="cta" data-node="7:25">
+    <img class="cta__squiggle" src="assets/squiggle.svg" width="150" height="120" alt="">
+    <div class="cta__copy">
+      <h2 class="h2 split c-white">
+        <span class="line"><span>Keep Your Finger on the</span></span>
+        <span class="line"><span>Investment Market Pulse</span></span>
+      </h2>
+      <a href="#final" class="btn btn--light">
+        <img src="assets/icon-download-dark.svg" width="18" height="18" alt="">
+        <span>Download App</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Phone / Portfolio -->
+  <div class="portfolio-wrap" data-node="7:35">
+    <div class="float">
+      <div class="phone phone--portfolio">
+        <p class="a w6 c-muted" style="left:94.5px;top:36px;font-size:7px;letter-spacing:.56px">TOTAL BALANCE</p>
+        <p class="a w7 c-ink" id="totalBalance" style="left:71.5px;top:50px;font-size:24px">$16,988.31</p>
+        <p class="a w5 c-green" style="left:100px;top:82px;font-size:8px">+$2,461 · 13.8%</p>
+        <div class="pp__card">
+          <p class="a w4 c-muted" style="left:14px;top:14px;font-size:8px">Brokerage Account</p>
+          <p class="a w7 c-white" style="left:194px;top:8px;font-size:12px">···</p>
+          <p class="a w7 c-white" style="left:14px;top:36px;font-size:15px">$5,738.70</p>
+          <p class="a w5 c-lime" style="left:92px;top:42px;font-size:7px">+11.4% · $591</p>
+          <span class="a pill" style="left:14px;top:66px">analytics</span>
+          <span class="a pill" style="left:90px;top:66px">replenish</span>
+        </div>
+        <p class="a w6 c-muted" style="left:16px;top:222px;font-size:6px;letter-spacing:.48px">STOCKS</p>
+
+        <div class="pp__row" style="top:238px">
+          <img class="a" src="assets/portfolio-icon.svg" width="22" height="22" alt="" style="left:16px;top:0">
+          <p class="a w7 c-ink" style="left:23.5px;top:5px;font-size:9px">A</p>
+          <p class="a w6 c-ink" style="left:44px;top:1px;font-size:8px">Apple Inc</p>
+          <p class="a w4 c-muted" style="left:44px;top:13px;font-size:6px">AAPL</p>
+          <img class="a spark" src="assets/sparkline-sm-up.svg" width="40" height="14" alt="" style="left:128px;top:4px">
+          <p class="a w6 c-ink" style="left:201px;top:1px;font-size:8px">$1,882.03</p>
+          <p class="a w5 c-green" style="left:217px;top:13px;font-size:6px">+48.1%</p>
+        </div>
+        <div class="pp__row" style="top:274px">
+          <img class="a" src="assets/portfolio-icon.svg" width="22" height="22" alt="" style="left:16px;top:0">
+          <p class="a w7 c-ink" style="left:22.5px;top:5px;font-size:9px">M</p>
+          <p class="a w6 c-ink" style="left:44px;top:1px;font-size:8px">Microsoft cor...</p>
+          <p class="a w4 c-muted" style="left:44px;top:13px;font-size:6px">MSFT</p>
+          <img class="a spark" src="assets/sparkline-sm-down.svg" width="40" height="14" alt="" style="left:128px;top:4px">
+          <p class="a w6 c-ink" style="left:202px;top:1px;font-size:8px">$1,402.71</p>
+          <p class="a w5 c-red" style="left:219px;top:13px;font-size:6px">-3.2%</p>
+        </div>
+        <div class="pp__row" style="top:310px">
+          <img class="a" src="assets/portfolio-icon.svg" width="22" height="22" alt="" style="left:16px;top:0">
+          <p class="a w7 c-ink" style="left:23.5px;top:5px;font-size:9px">D</p>
+          <p class="a w6 c-ink" style="left:44px;top:1px;font-size:8px">Dropbox Inc</p>
+          <p class="a w4 c-muted" style="left:44px;top:13px;font-size:6px">DBX</p>
+          <img class="a spark" src="assets/sparkline-sm-up.svg" width="40" height="14" alt="" style="left:128px;top:4px">
+          <p class="a w6 c-ink" style="left:207px;top:1px;font-size:8px">$669.12</p>
+          <p class="a w5 c-green" style="left:218px;top:13px;font-size:6px">+11.7%</p>
+        </div>
+        <p class="a w6 c-muted" style="left:16px;top:352px;font-size:6px;letter-spacing:.48px">FUNDS</p>
+        <div class="pp__row" style="top:368px">
+          <img class="a" src="assets/portfolio-icon.svg" width="22" height="22" alt="" style="left:16px;top:0">
+          <p class="a w7 c-ink" style="left:23.5px;top:5px;font-size:9px">V</p>
+          <p class="a w6 c-ink" style="left:44px;top:1px;font-size:8px">Vanguard S&amp;P...</p>
+          <p class="a w4 c-muted" style="left:44px;top:13px;font-size:6px">VOO</p>
+          <img class="a spark" src="assets/sparkline-sm-up.svg" width="40" height="14" alt="" style="left:128px;top:4px">
+          <p class="a w6 c-ink" style="left:201px;top:1px;font-size:8px">$1,292.73</p>
+          <p class="a w5 c-green" style="left:218px;top:13px;font-size:6px">+6.2%</p>
+        </div>
+        <div class="a hr" style="left:0;top:454px;width:250px"></div>
+        <img class="a tab-icon" src="assets/ptab-1.svg" width="16" height="16" alt="" style="left:38px;top:470px">
+        <img class="a tab-icon" src="assets/ptab-2.svg" width="16" height="16" alt="" style="left:116px;top:470px">
+        <img class="a tab-icon" src="assets/ptab-3.svg" width="16" height="16" alt="" style="left:194px;top:470px">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TRADE IN REAL TIME ============ -->
+  <section class="trade" data-node="7:90">
+    <div class="rot" style="left:190px;top:3.35px;width:396.276px;height:244.116px">
+      <div class="lime-card" style="--r:-4deg"></div>
+    </div>
+    <div class="rot" style="left:202.25px;top:58px;width:407.504px;height:235.825px">
+      <div class="chart-card" style="--r:2deg">
+        <img class="chart-card__line" src="assets/line-chart.svg" width="400" height="222" alt="">
+        <p class="a w4 c-white" style="left:350px;top:18px;font-size:8px">135.76</p>
+        <p class="a w5 c-lime" style="left:322px;top:32px;font-size:7px">+1.25% · $1.73</p>
+      </div>
+    </div>
+    <div class="trade__copy">
+      <h2 class="h2 split"><span class="line"><span>Trade in Real Time</span></span></h2>
+      <p class="body-l" data-reveal>No more waiting. Your orders are executed immediately, the price of your securities is updated every second and ProFinance always has the most relevant information</p>
+    </div>
+  </section>
+
+  <!-- ============ STONKS ============ -->
+  <section class="stonks" id="stonks" data-node="7:101">
+    <div class="stonks__copy">
+      <h2 class="h2 split">
+        <span class="line"><span id="stonksCount">100,000+</span></span>
+        <span class="line"><span>Stonks in Your App</span></span>
+      </h2>
+      <p class="body-l" data-reveal>Trade through ProFinance and you’ll gain access to thousands of financial markets from around the world, using a wide range of investment tools. We are sure you will find the paper that’s right for your investment strategy.</p>
+    </div>
+    <img class="stonks__circle" src="assets/lime-circle.svg" width="424" height="424" alt="">
+    <img class="stonks__line" src="assets/connector-line.svg" width="400" height="510" alt="">
+
+    <div class="rot stock-wrap" style="left:838.28px;top:36px;width:402.751px;height:109.563px">
+      <div class="stock-card" style="--r:4deg">
+        <div class="stock-card__icon">A</div>
+        <div class="stock-card__name"><p class="w5 c-ink" style="font-size:16px">Apple Inc</p><p class="w4 c-muted" style="font-size:12px">AAPL</p></div>
+        <img class="stock-card__spark" src="assets/sparkline-up.svg" width="64" height="24" alt="">
+        <div class="stock-card__price"><p class="w6 c-ink" style="font-size:16px" data-count="1882.03">$1,882.03</p><p class="w5 c-green" style="font-size:12px">+1.25%</p></div>
+      </div>
+    </div>
+    <div class="rot stock-wrap" style="left:809px;top:160px;width:401.746px;height:102.717px">
+      <div class="stock-card" style="--r:-3deg">
+        <div class="stock-card__icon">M</div>
+        <div class="stock-card__name"><p class="w5 c-ink" style="font-size:16px">Microsoft cor...</p><p class="w4 c-muted" style="font-size:12px">MSFT</p></div>
+        <img class="stock-card__spark" src="assets/sparkline-down.svg" width="64" height="24" alt="">
+        <div class="stock-card__price"><p class="w6 c-ink" style="font-size:16px" data-count="1402.71">$1,402.71</p><p class="w5 c-red" style="font-size:12px">-3.2%</p></div>
+      </div>
+    </div>
+    <div class="rot stock-wrap" style="left:865.14px;top:284px;width:400.619px;height:95.84px">
+      <div class="stock-card" style="--r:2deg">
+        <div class="stock-card__icon">D</div>
+        <div class="stock-card__name"><p class="w5 c-ink" style="font-size:16px">Dropbox Inc</p><p class="w4 c-muted" style="font-size:12px">DBX</p></div>
+        <img class="stock-card__spark" src="assets/sparkline-up.svg" width="64" height="24" alt="">
+        <div class="stock-card__price"><p class="w6 c-ink" style="font-size:16px" data-count="669.12">$669.12</p><p class="w5 c-green" style="font-size:12px">+11.7%</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final" id="final" data-node="7:141">
+    <h2 class="h2 split" style="text-align:center">
+      <span class="line"><span>Get the App for Free</span></span>
+      <span class="line"><span>and Start Now</span></span>
+    </h2>
+    <a href="#" class="btn btn--primary">
+      <img src="assets/icon-download.svg" width="18" height="18" alt="">
+      <span>Download App</span>
+    </a>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="footer" data-node="7:148">
+    <a href="#" class="logo logo--dark" aria-label="Pro Finance" style="position:absolute;left:161px;top:74px">
+      <img class="logo__accent" src="assets/logo-accent.svg" width="41" height="41" alt="">
+      <span class="logo__text">Pro Finance</span>
+    </a>
+    <div class="fcol" style="left:503px">
+      <p class="fcol__title">Resources</p>
+      <div class="fcol__links">
+        <a href="#">Stocks &amp; Founds</a><a href="#">Learn</a><a href="#">Help &amp; Support</a><a href="#">Blog</a>
+      </div>
+    </div>
+    <div class="fcol" style="left:732px">
+      <p class="fcol__title">Company</p>
+      <div class="fcol__links">
+        <a href="#">About</a><a href="#">Careers</a><a href="#">Privacy</a><a href="#">Terms</a>
+      </div>
+    </div>
+    <form class="subscribe" onsubmit="return false">
+      <p class="fcol__title">Subscribe to News</p>
+      <label class="subscribe__field">
+        <input type="email" placeholder="Your e-mail" aria-label="Your e-mail">
+        <button type="submit" class="subscribe__btn" aria-label="Subscribe"><img src="assets/submit-arrow.svg" width="16" height="16" alt=""></button>
+      </label>
+    </form>
+    <div class="social">
+      <a href="#" aria-label="Social 1"></a><a href="#" aria-label="Social 2"></a><a href="#" aria-label="Social 3"></a>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
