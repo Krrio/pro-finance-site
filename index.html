@@ -20,19 +20,24 @@
       <img class="logo__accent" src="assets/logo-accent.svg" width="41" height="41" alt="">
       <span class="logo__text">Pro Finance</span>
     </a>
-    <nav class="nav">
-      <a href="#features">About Us</a>
-      <a href="#stonks">Catalog</a>
-      <a href="#advantages">Price</a>
-      <a href="#footer">Help</a>
-    </nav>
-    <div class="actions">
-      <a href="#" class="btn btn--ghost">Log In</a>
-      <a href="#final" class="btn btn--nav">
-        <img src="assets/icon-download-sm.svg" width="14" height="14" alt="">
-        <span>Download App</span>
-      </a>
+    <div class="header__menu" id="menu">
+      <nav class="nav">
+        <a href="#features">About Us</a>
+        <a href="#stonks">Catalog</a>
+        <a href="#advantages">Price</a>
+        <a href="#footer">Help</a>
+      </nav>
+      <div class="actions">
+        <a href="#" class="btn btn--ghost">Log In</a>
+        <a href="#final" class="btn btn--nav">
+          <img src="assets/icon-download-sm.svg" width="14" height="14" alt="">
+          <span>Download App</span>
+        </a>
+      </div>
     </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
   </header>
 
   <!-- ============ HERO ============ -->
@@ -57,8 +62,9 @@
       <img src="assets/arrow-down.svg" width="14" height="14" alt="">
     </a>
 
+    <div class="hero__phones fitbox" data-fit="646x829"><div class="fitbox__inner">
     <!-- Phone / Stock Detail (rotated 10°) -->
-    <div class="rot phone-wrap phone-wrap--detail" style="left:909.97px;top:96px;width:440.165px;height:764.629px">
+    <div class="rot phone-wrap phone-wrap--detail" style="left:205.97px;top:63.63px;width:440.165px;height:764.629px">
       <div class="par"><div class="float">
         <div class="phone phone--detail" style="--r:10deg">
           <div class="pd__dark"></div>
@@ -106,7 +112,7 @@
     </div>
 
     <!-- Phone / Market (rotated -5°) -->
-    <div class="rot phone-wrap phone-wrap--market" style="left:704px;top:32.37px;width:401.458px;height:746.893px">
+    <div class="rot phone-wrap phone-wrap--market" style="left:0;top:0;width:401.458px;height:746.893px">
       <div class="par"><div class="float">
         <div class="phone phone--market" style="--r:-5deg">
           <p class="a w6 c-ink" style="left:24px;top:48px;font-size:30px">Market</p>
@@ -167,6 +173,7 @@
         </div>
       </div></div>
     </div>
+    </div></div>
   </section>
 
   <!-- ============ FEATURES ============ -->
@@ -240,7 +247,7 @@
   <section class="partners" data-node="6:168">
     <div class="partners__heading">
       <h2 class="h2 split"><span class="line"><span>Our Partners</span></span></h2>
-      <p class="body-l" data-reveal>The largest banks, funds and exchanges from<br>all over the world cooperate with us</p>
+      <p class="body-l" data-reveal>The largest banks, funds and exchanges from <br>all over the world cooperate with us</p>
     </div>
     <div class="partners__logos">
       <div class="partner">LOGO</div><div class="partner">LOGO</div><div class="partner">LOGO</div><div class="partner">LOGO</div>
@@ -327,16 +334,18 @@
 
   <!-- ============ TRADE IN REAL TIME ============ -->
   <section class="trade" data-node="7:90">
-    <div class="rot" style="left:190px;top:3.35px;width:396.276px;height:244.116px">
+    <div class="trade__visual fitbox" data-fit="420x295"><div class="fitbox__inner">
+    <div class="rot" style="left:0;top:0;width:396.276px;height:244.116px">
       <div class="lime-card" style="--r:-4deg"></div>
     </div>
-    <div class="rot" style="left:202.25px;top:58px;width:407.504px;height:235.825px">
+    <div class="rot" style="left:12.25px;top:54.65px;width:407.504px;height:235.825px">
       <div class="chart-card" style="--r:2deg">
         <img class="chart-card__line" src="assets/line-chart.svg" width="400" height="222" alt="">
         <p class="a w4 c-white" style="left:350px;top:18px;font-size:8px">135.76</p>
         <p class="a w5 c-lime" style="left:322px;top:32px;font-size:7px">+1.25% · $1.73</p>
       </div>
     </div>
+    </div></div>
     <div class="trade__copy">
       <h2 class="h2 split"><span class="line"><span>Trade in Real Time</span></span></h2>
       <p class="body-l" data-reveal>No more waiting. Your orders are executed immediately, the price of your securities is updated every second and ProFinance always has the most relevant information</p>
@@ -352,6 +361,7 @@
       </h2>
       <p class="body-l" data-reveal>Trade through ProFinance and you’ll gain access to thousands of financial markets from around the world, using a wide range of investment tools. We are sure you will find the paper that’s right for your investment strategy.</p>
     </div>
+    <div class="stonks__visual">
     <img class="stonks__circle" src="assets/lime-circle.svg" width="424" height="424" alt="">
     <img class="stonks__line" src="assets/connector-line.svg" width="400" height="510" alt="">
 
@@ -378,6 +388,7 @@
         <img class="stock-card__spark" src="assets/sparkline-up.svg" width="64" height="24" alt="">
         <div class="stock-card__price"><p class="w6 c-ink" style="font-size:16px" data-count="669.12">$669.12</p><p class="w5 c-green" style="font-size:12px">+11.7%</p></div>
       </div>
+    </div>
     </div>
   </section>
 

@@ -4,15 +4,60 @@
   const stage = document.getElementById('stage');
   const viewport = document.getElementById('viewport');
 
-  // The design is a fixed 1440px frame: scale it to the viewport width (never above 1:1).
+  const mobileMQ = window.matchMedia('(max-width: 1023px)');
+  const isMobile = () => mobileMQ.matches;
+
+  // Fixed-size compositions (phone mock-ups, chart cards) scaled down to fit their column on small screens.
+  function fitBoxes() {
+    document.querySelectorAll('[data-fit]').forEach((box) => {
+      const inner = box.firstElementChild;
+      if (!isMobile()) {
+        ['--fs', '--fx', '--fh'].forEach((p) => { box.style.removeProperty(p); box.parentElement.style.removeProperty(p); });
+        inner.style.width = inner.style.height = '';
+        return;
+      }
+      const [w, h] = box.dataset.fit.split('x').map(Number);
+      const avail = box.clientWidth;
+      const s = Math.min(1, avail / w);
+      inner.style.width = `${w}px`;
+      inner.style.height = `${h}px`;
+      box.style.setProperty('--fs', s);
+      box.style.setProperty('--fx', `${(avail - w * s) / 2}px`);
+      box.style.setProperty('--fh', `${h * s}px`);
+      box.parentElement.style.setProperty('--fh', `${h * s}px`);
+    });
+  }
+
+  // Desktop: the design is a fixed 1440px frame scaled to the viewport width (never above 1:1).
+  // Small screens: a fluid layout from styles.css takes over.
   function fit() {
-    const vw = document.documentElement.clientWidth;
-    const s = Math.min(vw / W, 1);
-    stage.style.setProperty('--s', s);
-    stage.style.setProperty('--x', `${(vw - W * s) / 2}px`);
-    viewport.style.height = `${H * s}px`;
+    if (isMobile()) {
+      stage.style.setProperty('--s', 1);
+      stage.style.setProperty('--x', '0px');
+      viewport.style.height = '';
+    } else {
+      const vw = document.documentElement.clientWidth;
+      const s = Math.min(vw / W, 1);
+      stage.style.setProperty('--s', s);
+      stage.style.setProperty('--x', `${(vw - W * s) / 2}px`);
+      viewport.style.height = `${H * s}px`;
+    }
+    fitBoxes();
   }
   fit();
+
+  /* ---------- Mobile menu ---------- */
+  const header = document.querySelector('.header');
+  const burger = document.getElementById('burger');
+  const setMenu = (open) => {
+    header.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  };
+  burger.addEventListener('click', () => setMenu(!header.classList.contains('is-open')));
+  document.querySelectorAll('.header__menu a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+  mobileMQ.addEventListener('change', () => setMenu(false));
 
   /* ---------- Candlestick chart (values from Figma node 5:27) ---------- */
   // [wickTop, wickHeight, bodyTop, bodyHeight, isUp]; candle i sits at x = 4 + 7i
@@ -76,7 +121,9 @@
     input.placeholder = 'Thanks! You are subscribed';
   });
 
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // `?static` renders the final state without animation (handy for screenshots)
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    || new URLSearchParams(window.location.search).has('static');
   if (!window.gsap || !window.ScrollTrigger || reduceMotion) {
     stage.style.visibility = 'visible';
     window.addEventListener('resize', fit);
@@ -108,7 +155,7 @@
   const intro = gsap.timeline({ defaults: { ease: 'power4.out' }, delay: 0.1 });
 
   intro
-    .from('.header > *', { y: -30, autoAlpha: 0, duration: 0.9, stagger: 0.08 }, 0)
+    .from('.header .logo, .header .nav, .header .actions, .burger', { y: -30, autoAlpha: 0, duration: 0.9, stagger: 0.08 }, 0)
     .from('.hero', { scale: 0.94, autoAlpha: 0, duration: 1.2, ease: 'expo.out' }, 0.05)
     .from('.hero .display .line > span', { yPercent: 110, duration: 1.1, stagger: 0.12 }, 0.3)
     .from('.hero__lead', { y: 26, autoAlpha: 0, duration: 1 }, 0.6)
@@ -270,10 +317,15 @@
 
   gsap.set(stage, { visibility: 'visible' });
 
+  // Only react to width changes, so the mobile address bar showing/hiding doesn't trigger a re-layout.
   let resizeRaf;
+  let lastWidth = window.innerWidth;
   window.addEventListener('resize', () => {
+    if (window.innerWidth === lastWidth) return;
+    lastWidth = window.innerWidth;
     cancelAnimationFrame(resizeRaf);
     resizeRaf = requestAnimationFrame(() => { fit(); ScrollTrigger.refresh(); });
   });
   window.addEventListener('load', () => ScrollTrigger.refresh());
+  if (document.fonts) document.fonts.ready.then(() => { fitBoxes(); ScrollTrigger.refresh(); });
 })();
