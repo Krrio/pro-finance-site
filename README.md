@@ -3,7 +3,7 @@
 A pixel-perfect, fully animated landing page for a fictional investment app, built from a Figma design with **vanilla HTML, CSS and JavaScript** and **GSAP**. No frameworks and no build step: the whole page loads straight from three files.
 
 <!-- Replace with your deployed URL (e.g. GitHub Pages) -->
-**[Live demo →](https://YOUR-USERNAME.github.io/YOUR-REPO/)**
+**[Live demo →](https://pro-finance-site.vercel.app/)**
 
 ![Pro Finance — hero section](docs/preview.png)
 
