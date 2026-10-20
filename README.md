@@ -101,7 +101,6 @@ Then open [http://localhost:5173](http://localhost:5173). Opening `index.html` d
 1. Push the repository to GitHub.
 2. Go to **Settings → Pages**.
 3. Choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
-4. After about a minute the site is live at `https://YOUR-USERNAME.github.io/YOUR-REPO/`.
 
 ## How It Works
 
@@ -114,10 +113,6 @@ Then open [http://localhost:5173](http://localhost:5173). Opening `index.html` d
 - Real market data from a public stock API.
 - Lighthouse and accessibility audit pass: focus styles, ARIA labels for decorative mock-ups.
 
-## Author
-
-**YOUR NAME**: Frontend Developer
-[Portfolio](https://your-portfolio.com) · [LinkedIn](https://linkedin.com/in/your-profile) · [GitHub](https://github.com/YOUR-USERNAME)
 
 ---
 
